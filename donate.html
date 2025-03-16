@@ -4,140 +4,170 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate/Sponsor - Georgia Thunder Softball</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul class="main-nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li class="dropdown">
-                    <a href="teams.html">Teams</a>
-                    <ul class="dropdown-content age-groups">
-                        <li class="sub-dropdown">
-                            <a href="teams.html#8u">8U</a>
-                            <ul class="team-list">
-                                <li><a href="teams.html#team1-8u">Thunder Elite 8U</a></li>
-                                <li><a href="teams.html#team2-8u">Thunder Storm 8U</a></li>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Teams
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="teams.html">Teams</a></li>
+                                <li><a class="dropdown-item" href="teams/thunder-elite-8u.html">Thunder Elite 8U</a></li>
+                                <li><a class="dropdown-item" href="teams/thunder-storm-8u.html">Thunder Storm 8U</a></li>
+                                <!-- Add other team links -->
                             </ul>
                         </li>
-                        <li class="sub-dropdown">
-                            <a href="teams.html#10u">10U</a>
-                            <ul class="team-list">
-                                <li><a href="teams.html#team1-10u">Thunder Elite 10U</a></li>
-                                <li><a href="teams.html#team2-10u">Thunder Storm 10U</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="join.html">Join Us</a>
                         </li>
-                        <li class="sub-dropdown">
-                            <a href="teams.html#12u">12U</a>
-                            <ul class="team-list">
-                                <li><a href="teams.html#team1-12u">Thunder Elite 12U</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="donate.html">Donate/Sponsor</a>
                         </li>
-                        <li class="sub-dropdown">
-                            <a href="teams.html#14u">14U</a>
-                            <ul class="team-list">
-                                <li><a href="teams.html#team1-14u">Thunder Elite 14U</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="store.html">Team Store</a>
                         </li>
-                        <li class="sub-dropdown">
-                            <a href="teams.html#16u">16U</a>
-                            <ul class="team-list">
-                                <li><a href="teams.html#team1-16u">Thunder Elite 16U</a></li>
-                            </ul>
-                        </li>
-                        <li class="sub-dropdown">
-                            <a href="teams.html#18u">18U</a>
-                            <ul class="team-list">
-                                <li><a href="teams.html#team1-18u">Thunder Elite 18U</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                     </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="join.html">Join Us</a>
-                    <ul class="dropdown-content">
-                        <li><a href="join.html#tryout">Tryout Request</a></li>
-                        <li><a href="join.html#become-team">Become a Georgia Thunder Team</a></li>
-                    </ul>
-                </li>
-                <li><a href="donate.html">Donate/Sponsor</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
-        <section id="donate" class="donate">
-            <h1>Support Georgia Thunder Softball</h1>
-            
-            <div class="support-options">
-                <div class="sponsorship-levels">
-                    <h2>Sponsorship Levels</h2>
-                    <div class="level-grid">
-                        <div class="level-card">
-                            <h3>Home Run Sponsor</h3>
-                            <p class="amount">$5,000+</p>
-                            <ul>
-                                <li>Logo on all team uniforms</li>
-                                <li>Banner at home field</li>
-                                <li>Featured on website</li>
-                                <li>Social media recognition</li>
-                                <li>VIP access to events</li>
-                            </ul>
-                            <a href="contact.html" class="cta-button">Become a Sponsor</a>
-                        </div>
-                        <div class="level-card">
-                            <h3>Triple Sponsor</h3>
-                            <p class="amount">$2,500</p>
-                            <ul>
-                                <li>Banner at home field</li>
-                                <li>Featured on website</li>
-                                <li>Social media recognition</li>
-                                <li>Event recognition</li>
-                            </ul>
-                            <a href="contact.html" class="cta-button">Become a Sponsor</a>
-                        </div>
-                        <div class="level-card">
-                            <h3>Double Sponsor</h3>
-                            <p class="amount">$1,000</p>
-                            <ul>
-                                <li>Featured on website</li>
-                                <li>Social media recognition</li>
-                                <li>Event recognition</li>
-                            </ul>
-                            <a href="contact.html" class="cta-button">Become a Sponsor</a>
+        <section class="donate-section py-5">
+            <div class="container">
+                <h1 class="display-4 text-center mb-5">Support Georgia Thunder Softball</h1>
+                
+                <div class="row g-4">
+                    <!-- Sponsorship Levels -->
+                    <div class="col-lg-8">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h2 class="card-title mb-4">Sponsorship Levels</h2>
+                                
+                                <div class="row g-4">
+                                    <div class="col-md-4">
+                                        <div class="card h-100 border-primary">
+                                            <div class="card-header bg-primary text-white">
+                                                <h3 class="card-title mb-0">Home Run Sponsor</h3>
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class="text-primary mb-3">$1,000</h4>
+                                                <ul class="list-unstyled">
+                                                    <li class="mb-2">✦ Large logo on banners</li>
+                                                    <li class="mb-2">✦ Website feature</li>
+                                                    <li class="mb-2">✦ Social media recognition</li>
+                                                    <li class="mb-2">✦ Event announcements</li>
+                                                </ul>
+                                                <button class="btn btn-primary mt-3 w-100">Select</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-4">
+                                        <div class="card h-100 border-secondary">
+                                            <div class="card-header bg-secondary text-white">
+                                                <h3 class="card-title mb-0">Triple Sponsor</h3>
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class="text-secondary mb-3">$500</h4>
+                                                <ul class="list-unstyled">
+                                                    <li class="mb-2">✦ Medium logo on banners</li>
+                                                    <li class="mb-2">✦ Website listing</li>
+                                                    <li class="mb-2">✦ Social media mention</li>
+                                                </ul>
+                                                <button class="btn btn-secondary mt-3 w-100">Select</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-4">
+                                        <div class="card h-100 border-info">
+                                            <div class="card-header bg-info text-white">
+                                                <h3 class="card-title mb-0">Double Sponsor</h3>
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class="text-info mb-3">$250</h4>
+                                                <ul class="list-unstyled">
+                                                    <li class="mb-2">✦ Small logo on banners</li>
+                                                    <li class="mb-2">✦ Website mention</li>
+                                                </ul>
+                                                <button class="btn btn-info mt-3 w-100">Select</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
+                    
+                    <!-- Donation Options -->
+                    <div class="col-lg-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h2 class="card-title mb-4">Make a Donation</h2>
+                                <p class="card-text">Your donation helps support our athletes and programs. All donations are tax-deductible.</p>
+                                
+                                <div class="donation-amounts mt-4">
+                                    <div class="d-grid gap-2">
+                                        <button class="btn btn-outline-primary">$25</button>
+                                        <button class="btn btn-outline-primary">$50</button>
+                                        <button class="btn btn-outline-primary">$100</button>
+                                        <button class="btn btn-outline-primary">$200</button>
+                                    </div>
+                                    
+                                    <div class="mt-4">
+                                        <label for="customAmount" class="form-label">Custom Amount</label>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text">$</span>
+                                            <input type="number" class="form-control" id="customAmount" placeholder="Enter amount">
+                                            <button class="btn btn-primary">Donate</button>
+                                        </div>
+                                    </div>
+                                </div>
 
-                <div class="donation-section">
-                    <h2>Make a Donation</h2>
-                    <p>Your donation helps support player development, tournament fees, equipment, and facilities maintenance.</p>
-                    <div class="donation-options">
-                        <button class="donation-amount">$25</button>
-                        <button class="donation-amount">$50</button>
-                        <button class="donation-amount">$100</button>
-                        <button class="donation-amount">$250</button>
-                        <button class="donation-amount">Custom Amount</button>
+                                <div class="equipment-donation mt-4">
+                                    <h3 class="card-title h4">Equipment Donations</h3>
+                                    <p class="card-text">We also accept donations of new or gently used softball equipment.</p>
+                                    <a href="contact.html" class="btn btn-outline-primary">Contact Us About Equipment</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <p class="donation-note">* All donations are tax-deductible. You will receive a receipt for your records.</p>
-                </div>
-
-                <div class="equipment-donation">
-                    <h2>Equipment Donation</h2>
-                    <p>We also accept donations of new or gently used softball equipment. Contact us to arrange a donation.</p>
-                    <a href="contact.html" class="cta-button">Contact About Equipment Donation</a>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024 Georgia Thunder Softball. All rights reserved.</p>
+    <footer class="bg-dark text-light py-3">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2024 Georgia Thunder Softball. All rights reserved.</p>
+        </div>
     </footer>
 
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html> 

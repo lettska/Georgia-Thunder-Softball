@@ -3,103 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Georgia Thunder Softball League</title>
+    <title>Georgia Thunder Softball</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul class="main-nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li class="dropdown">
-                    <a href="teams.html">Teams</a>
-                    <ul class="dropdown-content age-groups">
-                        <li class="sub-dropdown">
-                            <a href="teams.html#8u">8U</a>
-                            <ul class="team-list">
-                                <li><a href="teams.html#team1-8u">Thunder Elite 8U</a></li>
-                                <li><a href="teams.html#team2-8u">Thunder Storm 8U</a></li>
+      
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Teams
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="teams.html">Teams</a></li>
+                                <li><a class="dropdown-item" href="teams/thunder-elite-8u.html">Thunder Elite 8U</a></li>
+                                <li><a class="dropdown-item" href="teams/thunder-storm-8u.html">Thunder Storm 8U</a></li>
+                                <!-- Add other team links -->
                             </ul>
                         </li>
-                        <li class="sub-dropdown">
-                            <a href="teams.html#10u">10U</a>
-                            <ul class="team-list">
-                                <li><a href="teams.html#team1-10u">Thunder Elite 10U</a></li>
-                                <li><a href="teams.html#team2-10u">Thunder Storm 10U</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link"href="join.html">Join Us</a>
                         </li>
-                        <li class="sub-dropdown">
-                            <a href="teams.html#12u">12U</a>
-                            <ul class="team-list">
-                                <li><a href="teams.html#team1-12u">Thunder Elite 12U</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="donate.html">Donate/Sponsor</a>
                         </li>
-                        <li class="sub-dropdown">
-                            <a href="teams.html#14u">14U</a>
-                            <ul class="team-list">
-                                <li><a href="teams.html#team1-14u">Thunder Elite 14U</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="store.html">Team Store</a>
                         </li>
-                        <li class="sub-dropdown">
-                            <a href="teams.html#16u">16U</a>
-                            <ul class="team-list">
-                                <li><a href="teams.html#team1-16u">Thunder Elite 16U</a></li>
-                            </ul>
-                        </li>
-                        <li class="sub-dropdown">
-                            <a href="teams.html#18u">18U</a>
-                            <ul class="team-list">
-                                <li><a href="teams.html#team1-18u">Thunder Elite 18U</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                     </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="join.html">Join Us</a>
-                    <ul class="dropdown-content">
-                        <li><a href="join.html#tryout">Tryout Request</a></li>
-                        <li><a href="join.html#become-team">Become a Georgia Thunder Team</a></li>
-                    </ul>
-                </li>
-                <li><a href="donate.html">Donate/Sponsor</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+                </div>
+            </div>
         </nav>
+    
     </header>
 
     <main>
-        <section id="home" class="hero">
-            <h1>Welcome to Georgia Thunder Softball</h1>
-            <p>Empowering young athletes through competitive softball</p>
-            <div class="hero-buttons">
-                <a href="join.html" class="cta-button">Join Our Team</a>
-                <a href="donate.html" class="cta-button secondary">Support Us</a>
+        <section class="hero">
+            <div class="container">
+                <h1 class="display-4">Welcome to Georgia Thunder Softball</h1>
+                <p class="lead">Developing champions on and off the field</p>
+                <div class="hero-buttons">
+                    <a href="join.html" class="btn btn-primary btn-lg">Join Our Team</a>
+                    <a href="donate.html" class="btn btn-outline-light btn-lg">Support Us</a>
+                </div>
             </div>
         </section>
 
-        <section class="features">
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <h3>Elite Training</h3>
-                    <p>Professional coaching staff dedicated to player development</p>
-                </div>
-                <div class="feature-card">
-                    <h3>Competitive Teams</h3>
-                    <p>Age divisions from 8U to 18U</p>
-                </div>
-                <div class="feature-card">
-                    <h3>Character Building</h3>
-                    <p>Developing leadership skills and sportsmanship</p>
+        <section class="features py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title">Elite Training</h3>
+                                <p class="card-text">Access to top-tier coaching and training facilities.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title">Competitive Teams</h3>
+                                <p class="card-text">Multiple age divisions competing at the highest level.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title">Player Development</h3>
+                                <p class="card-text">Focused on both athletic and personal growth.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024 Georgia Thunder Softball. All rights reserved.</p>
+    <footer class="bg-dark text-light py-3">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2024 Georgia Thunder Softball. All rights reserved.</p>
+        </div>
     </footer>
 
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html> 
