@@ -4,146 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Join Us - Georgia Thunder Softball</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Teams
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="teams.html">Teams</a></li>
-                                <li><a class="dropdown-item" href="teams/thunder-elite-8u.html">Thunder Elite 8U</a></li>
-                                <li><a class="dropdown-item" href="teams/thunder-storm-8u.html">Thunder Storm 8U</a></li>
-                                <!-- Add other team links -->
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="join.html">Join Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="donate.html">Donate/Sponsor</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="store.html">Team Store</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
+    <header class="main-header">
+        <nav class="nav-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Georgia Thunder Logo">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown">
+                    <a href="teams.html">Teams</a>
+                    <ul class="dropdown-content">
+                        <li><a href="teams/8u.html">8U</a></li>
+                        <li><a href="teams/10u.html">10U</a></li>
+                        <li><a href="teams/12u.html">12U</a></li>
+                        <li><a href="teams/14u.html">14U</a></li>
+                        <li><a href="teams/16u.html">16U</a></li>
+                        <li><a href="teams/18u.html">18U</a></li>
                     </ul>
-                </div>
+                </li>
+                <li class="dropdown">
+                    <a href="join.html">Join Us</a>
+                    <ul class="dropdown-content">
+                        <li><a href="join/tryouts.html">Tryout Request</a></li>
+                        <li><a href="join/team.html">Georgia Thunder Team</a></li>
+                    </ul>
+                </li>
+                <li><a href="donate.html">Donate/Sponsor</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="store.html">Team Store</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </nav>
     </header>
 
     <main>
-        <section class="join-section py-5">
+        <section class="join-hero">
+            <div class="join-content">
+                <h1>Join Georgia Thunder Softball</h1>
+                <p>Be Part of Something Special</p>
+            </div>
+        </section>
+
+        <section class="join-options">
             <div class="container">
-                <h1 class="display-4 text-center mb-5">Join Georgia Thunder Softball</h1>
-                
-                <div class="row g-4">
-                    <!-- Tryout Request Form -->
-                    <div class="col-lg-8">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h2 class="card-title mb-4">Tryout Request</h2>
-                                <form id="tryoutForm">
-                                    <div class="row g-3">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="playerName" class="form-label">Player Name</label>
-                                                <input type="text" class="form-control" id="playerName" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="playerAge" class="form-label">Player Age</label>
-                                                <input type="number" class="form-control" id="playerAge" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="parentEmail" class="form-label">Parent Email</label>
-                                                <input type="email" class="form-control" id="parentEmail" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="phone" class="form-label">Phone Number</label>
-                                                <input type="tel" class="form-control" id="phone" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="form-group">
-                                                <label for="ageGroup" class="form-label">Preferred Age Group</label>
-                                                <select class="form-select" id="ageGroup" required>
-                                                    <option value="">Select Age Group</option>
-                                                    <option value="8U">8U</option>
-                                                    <option value="10U">10U</option>
-                                                    <option value="12U">12U</option>
-                                                    <option value="14U">14U</option>
-                                                    <option value="16U">16U</option>
-                                                    <option value="18U">18U</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="form-group">
-                                                <label for="experience" class="form-label">Previous Experience</label>
-                                                <textarea class="form-control" id="experience" rows="4"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <button type="submit" class="btn btn-primary">Submit Request</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
+                <div class="join-grid">
+                    <div class="join-card">
+                        <div class="join-icon">
+                            <i class="fas fa-user-plus"></i>
                         </div>
+                        <h2>Tryout Request</h2>
+                        <p>Interested in joining our program? Submit a tryout request and we'll get back to you with upcoming tryout dates and information.</p>
+                        <a href="join/tryouts.html" class="join-button">Request Tryout</a>
                     </div>
-                    
-                    <!-- Become a Team Section -->
-                    <div class="col-lg-4">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h2 class="card-title mb-4">Become a Georgia Thunder Team</h2>
-                                <p class="card-text">Join our organization and become part of the Thunder family. We're looking for teams that share our values and commitment to excellence.</p>
-                                
-                                <h3 class="card-title mt-4 mb-3">Requirements</h3>
-                                <ul class="list-unstyled">
-                                    <li class="mb-2">✦ Experienced coaching staff</li>
-                                    <li class="mb-2">✦ Commitment to player development</li>
-                                    <li class="mb-2">✦ Strong team organization</li>
-                                    <li class="mb-2">✦ Positive team culture</li>
-                                </ul>
 
-                                <h3 class="card-title mt-4 mb-3">Benefits</h3>
-                                <ul class="list-unstyled">
-                                    <li class="mb-2">✦ Access to premium facilities</li>
-                                    <li class="mb-2">✦ Professional development</li>
-                                    <li class="mb-2">✦ Tournament opportunities</li>
-                                    <li class="mb-2">✦ Organization support</li>
-                                </ul>
+                    <div class="join-card">
+                        <div class="join-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h2>Team Registration</h2>
+                        <p>Already have a team? Register your team to join our organization and participate in our tournaments and leagues.</p>
+                        <a href="join/team.html" class="join-button">Register Team</a>
+                    </div>
+                </div>
 
-                                <a href="contact.html" class="btn btn-primary mt-4">Contact Us to Learn More</a>
-                            </div>
+                <div class="join-info">
+                    <h2>Why Choose Georgia Thunder?</h2>
+                    <div class="benefits-grid">
+                        <div class="benefit-item">
+                            <i class="fas fa-trophy"></i>
+                            <h3>Competitive Excellence</h3>
+                            <p>Join one of the most competitive softball programs in Georgia</p>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h3>College Preparation</h3>
+                            <p>Develop skills and exposure for college opportunities</p>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-users"></i>
+                            <h3>Strong Community</h3>
+                            <p>Be part of a supportive and growing softball family</p>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-chart-line"></i>
+                            <h3>Player Development</h3>
+                            <p>Continuous improvement through professional coaching</p>
                         </div>
                     </div>
                 </div>
@@ -151,15 +105,35 @@
         </section>
     </main>
 
-    <footer class="bg-dark text-light py-3">
-        <div class="container text-center">
-            <p class="mb-0">&copy; 2024 Georgia Thunder Softball. All rights reserved.</p>
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@georgiathunder.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="teams.html">Teams</a></li>
+                    <li><a href="join.html">Join Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Georgia Thunder Softball. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Bootstrap JS and Popper.js -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
-    <script src="script.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html> 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Teams - Georgia Thunder Softball</title>
+    <title>Team Details - Georgia Thunder Softball</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -33,64 +33,56 @@
         </nav>
     </header>
 
-    <!-- Teams Hero Section -->
-    <section class="teams-hero">
-        <div class="teams-content">
-            <h1>Our Teams</h1>
-            <p>Discover the talent and dedication of Georgia Thunder Softball</p>
+    <!-- Team Hero Section -->
+    <section class="team-hero">
+        <div class="team-content">
+            <h1 id="team-title">Team Details</h1>
+            <p id="team-subtitle">Loading team information...</p>
         </div>
     </section>
 
-    <!-- Teams Grid Section -->
-    <section class="teams-grid">
+    <!-- Team Info Section -->
+    <section class="team-info">
         <div class="container">
-            <!-- 10U Division -->
-            <div class="division-section" id="10u">
-                <h2>10U Division</h2>
-                <div class="team-buttons">
-                    <a href="team.html?division=10u&team=thunder" class="team-button">10U Thunder</a>
-                    <a href="team.html?division=10u&team=lightning" class="team-button">10U Lightning</a>
-                    <a href="team.html?division=10u&team=storm" class="team-button">10U Storm</a>
+            <div class="team-stats">
+                <div class="stat-card">
+                    <i class="fas fa-trophy"></i>
+                    <h3>Record</h3>
+                    <p id="team-record">-</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-medal"></i>
+                    <h3>Ranking</h3>
+                    <p id="team-ranking">-</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Roster Size</h3>
+                    <p id="team-roster">-</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Season</h3>
+                    <p id="team-season">-</p>
                 </div>
             </div>
 
-            <!-- 12U Division -->
-            <div class="division-section" id="12u">
-                <h2>12U Division</h2>
-                <div class="team-buttons">
-                    <a href="team.html?division=12u&team=thunder" class="team-button">12U Thunder</a>
-                    <a href="team.html?division=12u&team=lightning" class="team-button">12U Lightning</a>
-                    <a href="team.html?division=12u&team=storm" class="team-button">12U Storm</a>
+            <div class="team-details">
+                <h2>About the Team</h2>
+                <p id="team-description">Loading team description...</p>
+            </div>
+
+            <div class="team-schedule">
+                <h2>Upcoming Games</h2>
+                <div class="schedule-list" id="team-schedule">
+                    <!-- Schedule items will be added dynamically -->
                 </div>
             </div>
 
-            <!-- 14U Division -->
-            <div class="division-section" id="14u">
-                <h2>14U Division</h2>
-                <div class="team-buttons">
-                    <a href="team.html?division=14u&team=thunder" class="team-button">14U Thunder</a>
-                    <a href="team.html?division=14u&team=lightning" class="team-button">14U Lightning</a>
-                    <a href="team.html?division=14u&team=storm" class="team-button">14U Storm</a>
-                </div>
-            </div>
-
-            <!-- 16U Division -->
-            <div class="division-section" id="16u">
-                <h2>16U Division</h2>
-                <div class="team-buttons">
-                    <a href="team.html?division=16u&team=thunder" class="team-button">16U Thunder</a>
-                    <a href="team.html?division=16u&team=lightning" class="team-button">16U Lightning</a>
-                    <a href="team.html?division=16u&team=storm" class="team-button">16U Storm</a>
-                </div>
-            </div>
-
-            <!-- 18U Division -->
-            <div class="division-section" id="18u">
-                <h2>18U Division</h2>
-                <div class="team-buttons">
-                    <a href="team.html?division=18u&team=thunder" class="team-button">18U Thunder</a>
-                    <a href="team.html?division=18u&team=lightning" class="team-button">18U Lightning</a>
-                    <a href="team.html?division=18u&team=storm" class="team-button">18U Storm</a>
+            <div class="team-gallery">
+                <h2>Team Gallery</h2>
+                <div class="gallery-grid" id="team-gallery">
+                    <!-- Gallery items will be added dynamically -->
                 </div>
             </div>
         </div>
@@ -131,5 +123,6 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/team.js"></script>
 </body>
 </html> 
