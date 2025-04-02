@@ -38,7 +38,16 @@ document.addEventListener('DOMContentLoaded', function() {
             { name: '18U Team', image: 'images/teams/18u.jpg' }
         ];
 
-       
+        teams.forEach(team => {
+            const teamCard = document.createElement('div');
+            teamCard.className = 'team-card';
+            teamCard.innerHTML = `
+                <img src="${team.image}" alt="${team.name}">
+                <h3>${team.name}</h3>
+                <a href="teams.html">Teams</a>
+            `;
+            teamGrid.appendChild(teamCard);
+        });
     }
 
     // Masonry grid for news feed
