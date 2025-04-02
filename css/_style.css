@@ -213,8 +213,8 @@ header.main-header .nav-container {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .hamburger {
-        display: flex;
+    .nav-menu {
+        display: none;
     }
 
     .hamburger {
