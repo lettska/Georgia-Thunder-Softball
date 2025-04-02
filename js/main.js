@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
             teamCard.innerHTML = `
                 <img src="${team.image}" alt="${team.name}">
                 <h3>${team.name}</h3>
-                <a href="teams/${team.name.toLowerCase().replace(' ', '')}.html" class="team-link">View Team</a>
+                <a href="teams.html">Teams</a>
             `;
             teamGrid.appendChild(teamCard);
         });
